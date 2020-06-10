@@ -1,9 +1,9 @@
-for f in *txt 
+for f in *txt #renames the .txt fikes
 do
 mv "$f" "new_${f}"
 done
 
-rm -rf*.bak
+find . -name "*.bak" -type f -delete #deletes all the .bak
 
 for p in *.py
 do
